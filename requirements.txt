@@ -1,0 +1,75 @@
+# requirements.txt
+# Core Framework
+fastapi==0.103.1
+uvicorn==0.23.2
+pydantic==2.3.0
+pydantic-settings==2.0.3
+
+# API Client & Async Support
+httpx==0.24.1
+aiohttp==3.8.5
+requests==2.31.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+authlib==1.2.1
+
+# Calendar Integration
+google-auth==2.22.0
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.0
+google-api-python-client==2.97.0
+exchangelib==4.9.0  # For Outlook Calendar
+
+# Database
+sqlalchemy==2.0.20
+asyncpg==0.28.0  # For async PostgreSQL support
+psycopg2-binary==2.9.7  # For PostgreSQL
+google-cloud-firestore==2.11.1  # For Firestore option
+
+# Temporal Workflow
+temporalio==1.2.0
+
+# AWS Integration
+boto3==1.28.40
+aiobotocore==2.5.4
+
+# Slack Integration
+slack-sdk==3.21.3
+
+# Email
+aiosmtplib==2.0.2
+jinja2==3.1.2  # For email templates
+
+# Timezone handling
+pytz==2023.3
+python-dateutil==2.8.2
+
+# Monitoring & Logging
+opentelemetry-api==1.19.0
+opentelemetry-sdk==1.19.0
+opentelemetry-exporter-otlp==1.19.0
+prometheus-client==0.17.1
+
+# AI/ML for Gemini API
+google-generativeai==0.2.1
+
+# Development & Testing
+pytest==7.4.0
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.7.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.5.1
+
+# Containerization
+docker==6.1.3
+
+# Utils
+pyyaml==6.0.1
+python-dotenv==1.0.0
+tenacity==8.2.3  # For retries
+structlog==23.1.0  # Structured logging
